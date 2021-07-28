@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERHERO-API</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Mi Css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!--SE MUESTRA NAVBAR Y IMAGEN PRINCIPAL-->
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/sh2.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                SuperHero
+            </a>
+        </nav>
+    </header>
+    
+    <!--SECCION DE FORMULARIO-->
+    <section>
+        <div class="row my-3">
+            <div class="col-12 col-sm-6 m-auto">
+                <img src="assets/img/sh1.jpg" alt="" class="w-100">
+            </div>
+            <div class="col-12 col-sm-8 m-auto">
+                <form class="my-3">
+                    <label>Ingresa el número del SuperHero a buscar</label>
+                    <input type="text" class="form-control" id="heroInput">
+                    <button type="submit" class="btn btn-primary mt-3 d-block mx-auto my-3">Consultar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!--SECCION PARA MOSTRAR LOS DATOS-->
+    <section>
+        <div class="row container">
+            <div id="heroeInfo" class="col-12 col-sm-6"></div>
+            <div class="col-12 col-sm-6" id="heroStats" style="height: 300px; width: auto"></div>
+        </div>
+    </section>
+    
+        <!--Mi JS-->
+        <script src="assets/js/index.js"></script>
+        <!--CANVASJS-->
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    </body>
+</html>
